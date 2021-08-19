@@ -1,0 +1,25 @@
+---
+import Head from '../components/Head.astro';
+import GenericHeader from '../components/GenericHeader.astro';
+import GenericSectionHeader from '../components/GenericSectionHeader.astro';
+import ExampleElements from '../components/ExampleElements.astro';
+import Footer from '../components/Footer.astro';
+---
+<html>
+	<head>
+		 <Head />
+	</head>
+	<body class="is-preload">
+        <div id="page-wrapper">
+            <GenericHeader title="Global Travel" />
+            <section id="wrapper">
+                <GenericSectionHeader title="Elements" />
+                <ExampleElements />
+            </section>
+            <Footer/>
+        </div>
+
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+	</body>
+</html>
